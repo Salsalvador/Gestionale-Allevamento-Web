@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina di Login</title>
+    <style>
+        body{
+            font-family: Arial, Arial, Arial;
+            background: rgba(37, 230, 255, 0.2);
+            min-height: 50vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2{margin-bottom: 24px; color: black;}
+        #loginForm{
+            background: white;
+            padding: 32px 28px 24px 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 320px;
+        }
+        #loginForm input{
+            margin: 10px 0;
+            padding: 10px 12px;
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(37, 230, 255, 0.05);
+            transition: border 0.2s;
+        }
+        #loginForm input:focus{border: 1.5px solid black; outline: none; background: white;}
+        #loginForm button{
+            margin-top: 16px;
+            padding: 10px 0;
+            width: 100%;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #loginForm button:hover{background: darkblue;}
+        #errore{
+            color: red;
+            margin-top: 12px;
+            min-height: 20px;
+            text-align: center;
+        }
+        p{margin-top: 24px; color: black;}
+        a{color: blue; text-decoration: none; font-weight: 500;}
+        a:hover{text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button type="submit">Accedi</button>
+    </form>
+
+    <div id="errore"></div>
+
+    <p>Non hai un account? <a href="registrazione.html">Registrati qui</a></p>
+
+    <script src="login.js"></script>
+</body>
+</html>

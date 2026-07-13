@@ -1,0 +1,1 @@
+Sviluppare una web app per gestire capi di bestiame, genealogie e produzione. Il sistema registra dati anagrafici, animali, vaccinazioni e controlli veterinari. Gestisce cicli riproduttivi, parti e pedigree. Monitora produzione latte/carne e qualità. Traccia alimentazione e spese per capo. L'allevatore genera report per certificazioni biologiche.
